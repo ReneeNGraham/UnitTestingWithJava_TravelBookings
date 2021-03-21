@@ -1,6 +1,9 @@
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
 
@@ -10,6 +13,9 @@ public class FlightTest {
     Plane plane1;
     Plane plane2;
     Plane plane3;
+    Passenger passenger1;
+    Passenger passenger2;
+    Passenger passenger3;
 
 
     @Before
@@ -20,6 +26,14 @@ public class FlightTest {
         plane1 = new Plane(PlaneType.AIRBUS_BELUGA_XL);
         plane2 = new Plane(PlaneType.BOEING_747);
         plane3 = new Plane(PlaneType.AIRBUS_A380);
+        passenger1 = new Passenger("Sandy", 2);
+        passenger2 = new Passenger("Mandy", 1);
+        passenger3 = new Passenger ("Dennis", 2);
+    }
+
+    @Test
+    public void  passengerListSizeStartsAt0() {
+        assertEquals(0, flight1.passengerListSize());
     }
 }
 

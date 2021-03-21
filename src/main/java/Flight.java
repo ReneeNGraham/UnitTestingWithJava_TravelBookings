@@ -18,8 +18,17 @@ public class Flight {
         this.time = time;
         this.passengers = new ArrayList<Passenger>();
 
-
     }
+    //add a passenger to the flight
+
+    public int passengerListSize()
+    {
+        return this.passengers.size();
+    }
+
+    //check available capacity after adding a passenger to the flight
+
+    //book a passenger onto the flight
 
 
     }
