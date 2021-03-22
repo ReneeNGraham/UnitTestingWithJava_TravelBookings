@@ -41,23 +41,19 @@ public class FlightTest {
     @Test
     public void hasCapacity() {
         assertEquals(200, plane1.getCapacity());
-
     }
 
-//    @Test
-//    public void canCheckInPassenger() {
-//        flight1.checkInPassenger(passenger1, plane1);
-//        flight1.checkInPassenger(passenger2, plane1);
-//        flight1.checkInPassenger(passenger3, plane1);
-//        assertEquals(3, flight1.passengerListSize());
-
+    @Test
+    public void canCheckInPassenger() {
+        flight1.checkInPassenger(passenger1, plane1);
+        flight1.checkInPassenger(passenger2, plane1);
+        flight1.checkInPassenger(passenger3, plane1);
+        assertEquals(3, flight1.passengerListSize());
+    }
 
     @Test
     public void testNumberOfSeats () {
         assertEquals(200, plane1.getCapacity() - flight1.passengerListSize());
-
-
-
 
     }
 

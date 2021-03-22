@@ -31,18 +31,24 @@ public class Flight {
         return this.passengers.size();
     }
 
-//    public int checkInPassenger(Passenger passenger, Plane plane) {
-//        if (this.passengerListSize() < plane.getCapacity()) {
-//            this.passengers.add(passenger); }
-//    }
-
     public int numberOfSeats() {
         return (plane.getCapacity() - this.passengerListSize());
 
     }
 
+    public void checkInPassenger(Passenger passenger, Plane plane) {
+        if (this.passengerListSize() < plane.getCapacity()) {
 
-}
+        }
+            this.passengers.add(passenger);
+        }
+
+    }
+
+
+
+
+
     //book a passenger onto the flight
 
 
