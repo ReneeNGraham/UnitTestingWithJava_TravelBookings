@@ -21,15 +21,30 @@ public class Flight {
     }
     //add a passenger to the flight
 
-    public int passengerListSize()
-    {
+
+    //check available capacity after adding a passenger to the flight
+    public int getCapacity() {
+        return plane.getCapacity();
+    }
+
+    public int passengerListSize() {
         return this.passengers.size();
     }
 
-    //check available capacity after adding a passenger to the flight
+//    public int checkInPassenger(Passenger passenger, Plane plane) {
+//        if (this.passengerListSize() < plane.getCapacity()) {
+//            this.passengers.add(passenger); }
+//    }
 
+    public int numberOfSeats() {
+        return (plane.getCapacity() - this.passengerListSize());
+
+    }
+
+
+}
     //book a passenger onto the flight
 
 
-    }
+
 
